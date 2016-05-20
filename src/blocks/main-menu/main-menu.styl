@@ -1,0 +1,64 @@
+.main-menu
+    width 100%
+    max-width 1240px
+    list-style none
+    padding 0
+    margin 0 auto
+    display flex
+    justify-content space-between
+    flex-flow row nowrap
+    +below(940px)
+        flex-flow row wrap
+
+    &__item
+        display flex
+        flex 1 0 auto
+        padding 0
+        margin 0
+        +below(940px)
+            flex 1 1 50%
+            &:nth-child(4)
+                order 1
+            &:nth-child(5)
+                display none
+        +below(480px)
+            flex 1 1 100%
+
+    &__link
+        display flex
+        flex 1 1 100%
+        justify-content center
+        align-items center
+        color #666
+        height 57px
+        color #fff
+        font(Demi)
+        font-size 25px
+        line-height 1
+        text-transform uppercase
+        padding 3px 30px 0
+        text-decoration none
+        transition all .5s ease
+        span^[0]__caption
+            padding-bottom 2px
+            border-bottom 1px dotted #fff
+
+        +below(1240px)
+            height 46px
+            font-size 19px
+            padding 2px 25px 0
+            span^[0]__caption
+                padding-bottom 1px
+
+        ^[0]__item.current &
+        &.current
+        &:hover
+            color #1e1e1c
+            text-decoration none
+            background-color #f4f6f8
+            span^[0]__caption
+                border-bottom-color transparent
+
+    +below(940px)
+        &__hide
+            display none

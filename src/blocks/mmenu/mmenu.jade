@@ -1,0 +1,7 @@
+include ../mobile-menu/mobile-menu
+
+mixin mmenu()
+    .mmenu()
+        .mmenu__logo
+        button(title="Закрыть" type="button").mmenu__close
+        +mobile-menu(class="mmenu__menu")

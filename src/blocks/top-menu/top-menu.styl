@@ -1,0 +1,36 @@
+.top-menu
+    display block
+    width 100%
+    list-style none
+    font-size 0
+    max-width 1202px
+    padding 0
+    margin 0 auto
+
+    &__item
+        display inline-block
+        padding 0
+        margin 0 8px 0 0
+
+    &__link
+        display inline-block
+        color #666
+        height 40px
+        color #666
+        font()
+        font-size 20px
+        line-height 1
+        padding 9px 15px 0
+        text-decoration none
+        transition all .5s ease
+        +below(1240px)
+            height 32px
+            font-size 16px
+            padding 7px 12px 0
+
+        ^[0]__item.current &
+        &.current
+        &:hover
+            color #666
+            text-decoration none
+            background-color #e6eaee

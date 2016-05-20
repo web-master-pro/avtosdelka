@@ -1,0 +1,33 @@
+.mmenu-trigger
+    display none
+    width 44px
+    height 36px
+    background-color transparent
+    border none
+    cursor pointer
+    backface-visibility hidden
+    +below(940px)
+        display block
+
+    &__in
+        top 15px
+        left 0
+        &
+        &::before
+        &::after
+            display block
+            width 44px
+            height 6px
+            background-color #d90025
+            backface-visibility hidden
+            transition all 0.1s
+            position absolute
+
+        &::before
+            content ""
+            top -15px
+            left 0
+        &::after
+            content ""
+            top 15px
+            left 0

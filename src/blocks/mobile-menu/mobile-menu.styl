@@ -1,0 +1,33 @@
+.mobile-menu
+    display flex
+    flex-flow column nowrap
+    list-style none
+    padding 0
+    margin 0
+
+    &__item
+        display block
+        padding 0
+        margin 0
+
+    &__link
+        display block
+        width 100%
+        color #fff
+        font(Book)
+        font-size 40px
+        line-height 1
+        text-transform uppercase
+        text-decoration none
+        padding .8em 1em
+        margin 0
+        ^[0]__item.current &
+        &.current
+        &:hover
+            color #010101
+            background-color white
+            text-decoration none
+        +below(650px)
+            font-size 25px
+        +below(480px)
+            font-size 20px

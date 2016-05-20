@@ -1,0 +1,26 @@
+include ../logo/logo
+include ../top-menu/top-menu
+include ../main-menu/main-menu
+include ../mmenu-trigger/mmenu-trigger
+include ../mmenu/mmenu
+
+mixin header()
+    header.header&attributes(attributes)
+        .header__top
+            +top-menu()
+
+        .header__main
+            +logo(class="header__logo")
+            
+            +mmenu-trigger(class="header__mmenu-trigger")
+
+            .header__mid
+                p.header__address 115114, г.&nbsp;Москва, Шлюзовая набережная д.&nbsp;2/1&nbsp;стр.&nbsp;1
+                a(href="#" target="_blank").header__map-link Схема проезда
+
+            .header__right
+                a(href="tel:+74952414444").header__phone +7 (495) <strong>241-44-44</strong>
+                a(href="#popup-callback").header__callback.js-popup Заказать обратный звонок
+
+        nav.header__nav
+            +main-menu()

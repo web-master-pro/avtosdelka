@@ -1,0 +1,24 @@
+{
+  "name": "template",
+  "authors": [
+    "Alexey Dobrov <mail@web-master-pro.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "normalize-css": "normalize.css#^4.0.0",
+    "magnific-popup": "^1.1.0"
+  }
+}

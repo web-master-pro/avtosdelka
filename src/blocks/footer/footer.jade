@@ -1,0 +1,17 @@
+include ../logo/logo
+include ../footer-menu/footer-menu
+
+mixin footer()
+    footer.footer&attributes(attributes)
+        .footer__in
+            .footer__left
+                +logo(class="footer__logo")
+                p.footer__copyright &copy; 2016, Автосделка. Кредит под залог автомобиля. <br>Разработка сайта – <a href="#" target="_blank">Сайтомания</a>
+
+            .footer__mid
+                +footer-menu-1(class="footer__menu-1")
+                +footer-menu-2(class="footer__menu-2")
+
+            .footer__right
+                a(href="tel:+74952414444").footer__phone +7 (495) <strong>241-44-44</strong>
+                button.button.footer__button Перезвоните мне

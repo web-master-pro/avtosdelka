@@ -1,0 +1,30 @@
+.footer-menu
+    width 170px
+    padding 0
+    margin 0
+    display block
+    list-style none
+    +below(1170px)
+        width 130px
+
+    &__item
+        display block
+        padding 0
+        margin 11px 0 13px
+
+    &__link
+        color #666
+        font()
+        font-size 16px
+        line-height 1
+        text-decoration underline
+        transition all .5s ease
+
+        +below(1170px)
+            font-size 13px
+
+        ^[0]__item.current &
+        &.current
+        &:hover
+            color #d90025
+            text-decoration underline

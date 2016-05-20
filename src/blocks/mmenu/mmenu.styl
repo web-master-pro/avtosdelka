@@ -1,0 +1,59 @@
+.mmenu
+    display block
+    width 100%
+    background rgba(50,50,50,0.97)
+    position fixed
+    height 100%
+    top 0
+    bottom 0
+    right -100%
+    overflow-y auto
+    overflow-x hidden
+    -webkit-overflow-scrolling touch
+    padding 160px 0 0
+    z-index 1500
+    +below(480px)
+        padding-top 130px
+
+    &.opened
+      display block
+
+    &__logo
+        sprite($icon_logo_mmenu)
+        position absolute
+        top 45px
+        left 40px
+        +below(650px)
+            left 23px
+        +below(480px)
+            transform scale(.6)
+            transform-origin left center
+            top 30px
+
+    &__close
+        display block
+        sprite($icon_mmenu_close)
+        background-color transparent
+        color transparent
+        border none
+        padding 0
+        outline none
+        position absolute
+        top 54px
+        right 40px
+        cursor pointer
+        &:hover
+            color transparent
+            text-decoration none
+            text-shadow none
+        +below(650px)
+            right 20px
+        +below(480px)
+            transform scale(.6)
+            top 39px
+
+// .blur
+//     -moz-filter blur(2px)
+//     -o-filter blur(2px)
+//     -ms-filter blur(2px)
+//     filter blur(2px)
