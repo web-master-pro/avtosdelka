@@ -1,12 +1,8 @@
 include ../blocks/browsehappy/browsehappy
 include ../blocks/header/header
-include ../blocks/slider/slider
-include ../blocks/features/features
+include ../blocks/breadcrumb/breadcrumb
 include ../blocks/text-block/text-block
-include ../blocks/steps/steps
-include ../blocks/docs/docs
-include ../blocks/order/order
-include ../blocks/map/map
+include ../blocks/catalog/catalog
 include ../blocks/footer/footer
 include ../blocks/popups/popups
 
@@ -17,7 +13,7 @@ html(lang="ru-RU")
     head
         meta(charset="utf-8")
         
-        title Автосделка
+        title Услуга | Автосделка
         meta(name="description" content="")
         meta(name="keywords" content="")
         
@@ -42,14 +38,13 @@ html(lang="ru-RU")
         +browsehappy()
         +header(id="header")
         main.main
-            +slider()
-            +features()
-            +text-block-1()
-            +steps()
-            +docs()
-            +order()
-            +map()
-            +text-block-2()
+            section.content
+                .content__in
+                    +breadcrumb-2()
+                    h1.page-title Автосалон
+                    p Возможность получить кредит под залог автомобиля обладает массой достоинств. Во-первых, оперативность выдачи денег – всего через 30 минут вы получите 90% от стоимости вашего автомобиля наличными в кассе автоломбарда. Стоимость рассчитывается на основе результатов оценки авто профессиональными экспертами компании, обладающими значительным опытом в экспертизе транспорта. 
+                +catalog()
+            +text-block-5()
         +footer(id="footer")
         +mmenu()
         .hidden

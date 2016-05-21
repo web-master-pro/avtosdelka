@@ -1,0 +1,68 @@
+.catalog
+    display block
+    width 100%
+
+    &__in
+        container(1230px)
+        padding 0 10px
+
+    &__list
+        display block
+        width 100%
+        list-style none
+        font-size 0
+        text-align center
+        padding 0
+        margin 0
+
+    &__item
+        display inline-block
+        vertical-align top
+        width 100%
+        max-width 370px
+        background-color #f4f6f8
+        text-align left
+        padding 0
+        margin 0 15px 30px
+        +below(1250px)
+            max-width 280px
+            margin 0 10px 20px
+
+    &__photo
+        display block
+        width 100%
+        max-width 370px
+        height auto
+        margin 0 auto 25px
+
+    &__caption
+        color #333
+        font()
+        font-size 22px
+        line-height 1
+        padding 0 20px
+        margin 0 0 .9em
+        +below(1250px)
+            font-size 18px
+
+    &__link
+        color #333
+        font()
+        font-size 22px
+        line-height 1
+        text-decoration underline
+        &:hover
+            color #d90025
+            text-decoration underline
+        +below(1250px)
+            font-size 14px
+
+    &__description
+        color #363835
+        font()
+        font-size 17px
+        line-height 1.5
+        padding 0 20px
+        margin 0 0 20px
+        +below(1250px)
+            font-size 14px

@@ -217,7 +217,7 @@ gulp.task('watch', function (cb) {
         notify("JS Plugins").write('');
     });
 
-    watch("src/img/*.*", function(event, cb) {
+    watch("src/img/**/*.*", function(event, cb) {
         runSequence('img', browserSync.reload);
         notify("Images").write('');
     });
