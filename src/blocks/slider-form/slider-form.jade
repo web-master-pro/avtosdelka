@@ -1,5 +1,7 @@
 mixin slider-form()
     form(action="#" method="POST").slider-form&attributes(attributes)
-        input(type="text" name="name" placeholder="Имя").input.slider-form__input
-        input(type="tel" name="phone" placeholder="Телефон").input.slider-form__input
-        button(type="submit").button.slider-form__button Отправить заявку
+        .slider-form__group
+            input(type="text" name="name" placeholder="Имя").input.slider-form__input
+            input(type="tel" name="phone" placeholder="Телефон").input.slider-form__input
+            button(type="submit").button.slider-form__button Отправить заявку
+        p.slider-form__privacy Мы не передаем телефон 3-м лицам и не рассылаем спам

@@ -1,6 +1,7 @@
 .slider
     width 100%
     position relative
+    overflow-x hidden
 
 
     &__container
@@ -20,7 +21,8 @@
         transition all .3s ease
         +below(1250px)
             transform scale(.6)
-            transform-origin left center
+            transform-origin left top
+            top 30%
             left -20px
         &.on
             left 0
@@ -37,7 +39,8 @@
         transition all .3s ease
         +below(1250px)
             transform scale(.6)
-            transform-origin right center
+            transform-origin right top
+            top 30%
             right -20px
         &.on
             right 0

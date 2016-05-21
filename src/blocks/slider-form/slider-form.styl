@@ -1,13 +1,17 @@
 .slider-form
     width 100%
-    display flex
-    flex-flow row nowrap
-    justify-content space-between
     +below(600px)
         max-width 400px
         margin 0 auto
-        flex-direction column
-        align-items center
+
+    &__group
+        width 100%
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        +below(600px)
+            flex-direction column
+            align-items center
 
     &__input
         max-width 100%
@@ -26,3 +30,14 @@
             height 42px
         +below(600px)
             max-width 210px
+
+    &__privacy
+        color #57595b
+        font()
+        font-size 14px
+        line-height 1
+        margin 40px 0 0
+        text-align right
+        +below(700px)
+            text-align center
+            margin-top 30px
