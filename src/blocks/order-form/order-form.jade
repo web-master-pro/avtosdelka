@@ -1,0 +1,7 @@
+mixin order-form()
+    form(action="#" method="POST").order-form#order-form
+        input(type="text" name="name" placeholder="Имя").input.order-form__input
+        input(type="tel" name="phone" placeholder="Телефон").input.order-form__input
+        .order-form__bottom
+            input(type="submit").button.order-form__button
+            p.order-form__privacy Не передаем телефон 3-м лицам, не рассылаем спам

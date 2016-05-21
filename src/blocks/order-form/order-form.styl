@@ -1,0 +1,58 @@
+.order-form
+    background-color rgba(0,0,0,.7)
+    // background-image linear-gradient(to top, rgba(0, 0, 0, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%)
+    padding 25px
+    width 100%
+    height auto
+    max-width 420px
+    +below(1170px)
+        max-width 334px
+        padding 20px
+    +below(940px)
+        max-width 100%
+        padding 40px
+    +below(480px)
+        padding 40px 20px 20px
+
+    &__input
+        margin-bottom 20px
+        +below(1170px)
+            height 42px
+            line-height 42px
+        +below(940px)
+            display block
+            height 50px
+            line-height 50px
+            max-width 590px
+            margin 0 auto 20px
+
+    &__bottom
+        margin 0
+        display flex
+        +below(940px)
+            flex-direction column
+
+    &__button
+        max-width 190px
+        height 50px
+        flex 0 0 auto
+        +below(1170px)
+            max-width 150px
+            height 40px
+        +below(940px)
+            max-width 190px
+            height 50px
+            margin 0 auto 20px
+
+    &__privacy
+        color #bebebe
+        font()
+        font-size 14px
+        line-height 1.5
+        margin 0 0 0 10px
+        +below(1170px)
+            font-size 11px
+        +below(940px)
+            font-size 14px
+            margin 0
+            text-align center

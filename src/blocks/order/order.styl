@@ -1,0 +1,50 @@
+.order
+    background #fff url(img/order-bg.jpg) no-repeat center top
+    background-size cover
+
+    &__in
+        container(1260px)
+        padding 100px 20px 110px
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items center
+        +below(940px)
+            flex-direction column
+            justify-content center
+            padding 70px 0 0
+
+    &__content
+        padding-left 25px
+        padding-right 25px
+        flex 1 1 auto
+        +below(940px)
+            padding 0 20px 40px
+            text-align center
+
+
+    &__form
+        flex 0 0 auto
+
+    &__title
+        color #2a2a2a
+        font(Book)
+        font-size 65px
+        line-height 1
+        text-align left
+        margin 0 0 40px
+        +below(1170px)
+            font-size 52px
+        +below(940px)
+            text-align center
+        +below(480px)
+            font-size 45px
+
+    &__text
+        color #2a2a2a
+        font()
+        font-size 20px
+        line-height 1.6
+        margin 0
+        +below(1170px)
+            font-size 16px

@@ -1,7 +1,12 @@
 include ../blocks/browsehappy/browsehappy
 include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/features/features
 include ../blocks/text-block/text-block
+include ../blocks/steps/steps
 include ../blocks/docs/docs
+include ../blocks/order/order
+include ../blocks/map/map
 include ../blocks/footer/footer
 include ../blocks/popups/popups
 
@@ -38,8 +43,13 @@ html(lang="ru-RU")
         +header(id="header")
         
         main.main
+            +slider()
+            +features()
             +text-block-1()
+            +steps()
             +docs()
+            +order()
+            +map()
             +text-block-2()
             
         +footer(id="footer")

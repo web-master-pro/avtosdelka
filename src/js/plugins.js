@@ -24,4 +24,5 @@
 // Place any jQuery/helper plugins in here.
 
 //= ../bower/magnific-popup/dist/jquery.magnific-popup.js
+//= ../bower/slick-carousel/slick/slick.min.js
 //= libs/smoothscroll.js

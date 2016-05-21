@@ -1,0 +1,10 @@
+include ../order-form/order-form
+
+mixin order()
+    section.order&attributes(attributes)
+        .order__in
+            .order__content
+                h2.order__title Приезжайте <br>к нам в офис
+                p.order__text Оставьте заявку, и наши менеджеры с радостью встретят вас в нашем комфортабельном офисе и максимально быстро подготовят необходимые документы.
+            
+            +order-form(class="order__form")

@@ -1,0 +1,15 @@
+mixin map()
+    .map#map&attributes(attributes)
+    
+    script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script.
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.732184, 37.6421483],
+                    zoom: 16,
+                    controls: []
+                }),
+                myPlacemark = new ymaps.Placemark([55.732184, 37.6421483]);
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier', 'scrollZoom']);
+        });
