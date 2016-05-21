@@ -17,7 +17,7 @@ $(document).ready(function() {
         $("html").addClass("pc");
     };
 
-    if (navigator.userAgent.search("MSIE") >= 0) {
+    if ((navigator.userAgent.search("MSIE") >= 0) || (navigator.userAgent.search("Trident/7.0") >= 0)) {
         $('html').addClass('ie');
     };
 

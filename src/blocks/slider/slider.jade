@@ -13,8 +13,9 @@ mixin slider()
                             li.slide__item Охраняемая парковка
                             li.slide__item Офис в центре Москвы <span>(м. Павелецкая)</span>
                         +slider-form(class="slide__form")
-            .slide
+            .slide.slide--reverse
                 .slide__in
+                    img(src="assets/img/slider-photo-2.png" width="336" height="470" alt="").slide__img
                     .slide__content
                         h2.slide__title Деньги за 30 минут под залог автомобиля
                         ul.slide__list
@@ -23,6 +24,5 @@ mixin slider()
                             li.slide__item Офис в центре Москвы <span>(м. Павелецкая)</span>
                         +slider-form(class="slide__form")
 
-                    img(src="assets/img/slider-photo-2.png" width="336" height="470" alt="").slide__img
         .slider__arrow-prev.js-slider-prev
         .slider__arrow-next.js-slider-next

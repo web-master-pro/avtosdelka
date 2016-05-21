@@ -10,9 +10,10 @@
         flex-flow row nowrap
         justify-content space-between
         +below(940px)
-            flex-wrap wrap
+            flex-flow row wrap
             max-width 650px
             padding-bottom 20px
+            align-items center
         +below(520px)
             flex-direction column
             align-items center
@@ -52,7 +53,9 @@
         +below(940px)
             flex 1 0 50%
             margin-bottom 30px
-
+            .ie &
+                width 240px
+                flex 1 0 auto
         +below(520px)
             flex 0 0 auto
             width 240px

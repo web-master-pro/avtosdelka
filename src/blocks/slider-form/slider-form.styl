@@ -1,6 +1,6 @@
 .slider-form
     width 100%
-    +below(600px)
+    +below(700px)
         max-width 400px
         margin 0 auto
 
@@ -9,9 +9,9 @@
         display flex
         flex-flow row nowrap
         justify-content space-between
-        +below(600px)
-            flex-direction column
-            align-items center
+        +below(700px)
+            flex-flow row wrap
+            justify-content: center
 
     &__input
         max-width 100%
@@ -20,7 +20,9 @@
         +below(1170px)
             height 42px
             line-height 42px
-        +below(600px)
+        +below(700px)
+            flex 1 0 100%
+            margin-right 0
             margin-bottom 20px
 
     &__button
@@ -28,8 +30,13 @@
         flex 1 1 32%
         +below(1170px)
             height 42px
-        +below(600px)
+            font-size 16px
+        +below(700px)
             max-width 210px
+            height 42px
+            flex 0 0 auto
+            font-size 20px
+
 
     &__privacy
         color #57595b
@@ -38,6 +45,6 @@
         line-height 1
         margin 40px 0 0
         text-align right
-        +below(700px)
+        +below(940px)
             text-align center
             margin-top 30px
