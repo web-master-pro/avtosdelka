@@ -1,12 +1,12 @@
 include ../blocks/browsehappy/browsehappy
 include ../blocks/header/header
+include ../blocks/breadcrumb/breadcrumb
 include ../blocks/slider/slider
 include ../blocks/features/features
 include ../blocks/text-block/text-block
 include ../blocks/steps/steps
 include ../blocks/docs/docs
 include ../blocks/order/order
-include ../blocks/map/map
 include ../blocks/footer/footer
 include ../blocks/popups/popups
 
@@ -43,14 +43,20 @@ html(lang="ru-RU")
         +header(id="header")
         
         main.main
-            +slider()
+            section.content
+                .content__in
+                    +breadcrumb-1()
+                    h1.page-title Автоломбард
+                    p Возможность получить кредит под залог автомобиля обладает массой достоинств. Во-первых, оперативность выдачи денег – всего через 30 минут вы получите 90% от стоимости вашего автомобиля наличными в кассе автоломбарда. 
+            +slider-reverse()
             +features()
-            +text-block-1()
+            +text-block-3()
             +steps()
             +docs()
+            +text-block-4()
+            +text-block-extra()
             +order()
-            +map()
-            +text-block-2()
+            +text-block-5()
             
         +footer(id="footer")
         +mmenu()

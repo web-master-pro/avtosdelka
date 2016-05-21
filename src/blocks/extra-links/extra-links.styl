@@ -1,0 +1,47 @@
+.extra-links
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+    list-style none
+    font-size 0
+    padding 0 0 30px
+    margin 0
+    +below(940px)
+        max-width 650px
+        margin 0 auto
+        flex-flow row wrap
+        justify-content center
+
+    &__item
+        display block
+        flex 1 1 30%
+        padding 0
+        margin 0 0 30px
+        &:nth-child(2)
+            margin 0 30px 30px
+
+        +below(940px)
+            flex 1 1 100%
+            &:nth-child(2)
+                margin 0 0 30px
+
+    &__link
+        display block
+        width 100%
+        height 57px
+        border 2px solid #b8b8b8
+        background-color #fff
+        color #1e1e1c
+        font(Book)
+        font-size 26px
+        line-height 53px
+        text-align center
+        text-transform uppercase
+        text-decoration none
+        transition all .3s ease
+        &:hover
+            color #fff
+            background-color #d90025
+            border-color #d90025
+        +below(1170px)
+            font-size 20px
