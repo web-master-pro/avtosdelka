@@ -1,0 +1,101 @@
+.card
+    width 100%
+    max-width 1210px
+    margin -10px auto 0
+    padding 0 20px 5px
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+    +below(940px)
+        flex-flow row wrap
+        justify-content center
+        padding 0
+
+    &__info
+        flex 1 1 470px
+        margin-right 30px
+        +below(940px)
+            flex 1 1 100%
+            order 2
+            padding 30px 20px 0px
+            margin-right 0
+
+    &__slideshow
+        flex 0 0 670px
+        max-width 670px
+        // background-color #eee
+        +below(1210px)
+            flex 0 0 540px
+            max-width 540px
+        +below(940px)
+            flex 1 1 100%
+            max-width 100%
+            // min-height 500px
+
+    &__price
+        display block
+        width 100%
+        background-color #f4f6f8
+        color black
+        font(Book)
+        font-size 36px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        padding 1em .5em
+        margin 0
+        +below(480px)
+            font-size 28px
+
+    &__list
+        display block
+        width 100%
+        list-style none
+        padding 15px 0 20px
+        margin 0
+
+    &__item
+        display flex
+        flex-flow row wrap
+        width 100%
+        padding 10px 0
+        margin 0
+
+    &__caption
+    &__value
+        display block
+        flex 1 1 50%
+        color #888
+        font()
+        font-size 20px
+        line-height 1
+        margin 0
+
+    &__value
+        color #363835
+
+    &__button
+        display inline-block
+        border 1px solid #ccc
+        background-color #fff
+        color #363835
+        font()
+        font-size 20px
+        line-height 1
+        text-align center
+        text-transform uppercase
+        text-decoration none
+        padding 18px 20px
+        transition all .3s ease
+        &:hover
+            color #fff
+            background-color #d90025
+            border-color #d90025
+.fotorama
+
+    // &__nav
+    //     white-space wrap
+
+    &__nav-wrap
+        +below(940px)
+            display none

@@ -1,7 +1,7 @@
 mixin card()
     .card&attributes(attributes)
-        .card__left
-            .card__price 1 400 000 руб
+        .card__info
+            p.card__price 1 400 000 руб
             ul.card__list
                 li.card__item
                     .card__caption Год выпуска
@@ -17,7 +17,7 @@ mixin card()
                     .card__value Коричневый металлик
                 li.card__item
                     .card__caption Двигатель
-                    .card__value 2ю0 145 л.с.бензин
+                    .card__value 2.0 145 л.с.бензин
                 li.card__item
                     .card__caption Коробка
                     .card__value Механическая
@@ -40,6 +40,19 @@ mixin card()
                     .card__caption Таможня
                     .card__value Растаможен
 
-            button.card__button Все характеристики
-            
-        .card__right
+            a(href="#" role="button").card__button Все характеристики
+
+        .card__slideshow
+            .fotorama(data-auto="false")
+                img(src="assets/img/card/card-1.jpg" alt="")
+                img(src="assets/img/card/card-2.jpg" alt="")
+                img(src="assets/img/card/card-3.jpg" alt="")
+                img(src="assets/img/card/card-4.jpg" alt="")
+                img(src="assets/img/card/card-5.jpg" alt="")
+                img(src="assets/img/card/card-6.jpg" alt="")
+                img(src="assets/img/card/card-7.jpg" alt="")
+                img(src="assets/img/card/card-8.jpg" alt="")
+                img(src="assets/img/card/card-9.jpg" alt="")
+                img(src="assets/img/card/card-10.jpg" alt="")
+                img(src="assets/img/card/card-11.jpg" alt="")
+                img(src="assets/img/card/card-12.jpg" alt="")
