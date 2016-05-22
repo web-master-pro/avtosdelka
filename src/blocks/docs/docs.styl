@@ -6,7 +6,7 @@
         container(1070px)
         padding 50px 20px
         +below(480px)
-            padding-bottom 30px
+            padding 50 5px 30px
 
     &__title
         color #2a2a2a
@@ -16,6 +16,8 @@
         text-align center
         text-transform uppercase
         margin 0 0 50px
+        +below(480px)
+            font-size 24px
 
     &__list
         display flex
@@ -25,9 +27,6 @@
         list-style none
         padding 0
         margin 0
-        +below(480px)
-            flex-wrap wrap
-            justify-content center
 
     &__item
         flex 0 1 270px
@@ -38,8 +37,8 @@
             flex 0 1 172px
 
         +below(480px)
-            margin 0 0 40px
-            flex 0 1 270px
+            margin 0 5px
+            min-width 80px
 
     &__img
         display block
@@ -58,4 +57,4 @@
         +below(650px)
             font-size 16px
         +below(480px)
-            font-size 20px
+            font-size 13px

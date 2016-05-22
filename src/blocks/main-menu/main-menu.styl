@@ -22,7 +22,8 @@
             &:nth-child(5)
                 display none
         +below(480px)
-            flex 1 1 100%
+            // flex 1 1 100%
+
 
     &__link
         display flex
@@ -49,6 +50,9 @@
             padding 2px 25px 0
             span^[0]__caption
                 padding-bottom 1px
+        +below(480px)
+            font-size 15px
+            padding 2px 2px 0
 
         ^[0]__item.current &
         &.current
@@ -58,6 +62,7 @@
             background-color #f4f6f8
             span^[0]__caption
                 border-bottom-color transparent
+
 
     +below(940px)
         &__hide

@@ -87,6 +87,9 @@
             float none
             max-width 650px
             margin 0 auto
+            padding-top 20px
+        +below(480px)
+            padding-top 0
 
     &--reverse &__content
         float left
@@ -118,6 +121,11 @@
         +below(1170px)
             margin-bottom 30px
         +below(700px)
+            justify-content space-around
+        +below(700px)
+            justify-content space-between
+            margin 0 0 10px
+        +below(450px)
             flex-direction column
             align-items center
 
@@ -159,11 +167,26 @@
                 font-size 11px
 
         +below(700px)
-            font-size 24px
+            font-size 14px
             padding-top 0
-            padding-left 70px
-            max-width 100%
-            width 260px
-            margin-bottom 30px
+            padding-left 40px
+            // width 100%
+            max-width 180px
+            flex 1 0 auto
             span
-                font-size 14px
+                font-size 11px
+            &::before
+                transform scale(.6)
+                transform-origin top left
+        +below(520px)
+            padding-left 30px
+            margin-bottom 10px
+            &::before
+                transform scale(.5)
+        +below(450px)
+            font-size 18px
+            max-width 100%
+            width 220px
+            padding-left 60px
+            &::before
+                transform scale(.8)

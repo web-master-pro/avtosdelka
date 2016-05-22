@@ -14,9 +14,10 @@
             max-width 650px
             padding-bottom 20px
             align-items center
-        +below(520px)
-            flex-direction column
-            align-items center
+            justify-content center
+        // +below(520px)
+        //     flex-direction column
+        //     align-items center
 
     &__item
         display inline-block
@@ -57,5 +58,23 @@
                 width 240px
                 flex 1 0 auto
         +below(520px)
-            flex 0 0 auto
-            width 240px
+            font-size 18px
+            width 120px
+            margin-bottom 20px
+            padding-left 55px
+            line-height 1.1
+            span
+                font-size 22px
+            &::before
+                transform scale(.7)
+                transform-origin top left
+                top 2px
+        +below(400px)
+            font-size 16px
+            padding-left 45px
+            line-height 1.1
+            span
+                font-size 18px
+            &::before
+                transform scale(.6)
+                top 2px
