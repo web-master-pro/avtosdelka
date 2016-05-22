@@ -1,0 +1,6 @@
+include ../ask-form/ask-form
+mixin ask-question()
+    section.ask-question&attributes(attributes)
+        .ask-question__in
+            h2.ask-question__title Задать вопрос
+            +ask-form()

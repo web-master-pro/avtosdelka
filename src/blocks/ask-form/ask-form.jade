@@ -1,0 +1,13 @@
+mixin ask-form()
+    form(action="#" method="POST").ask-form&attributes(attributes)
+        .ask-form__main
+            .ask-form__left
+                textarea(name="question").textarea.ask-form__textarea#ask-form__textarea
+                p.ask-form__textarea-placeholder Ваш вопрос
+            .ask-form__right
+                input(type="text" name="name" placeholder="Имя").input.ask-form__input
+                input(type="email" name="email" placeholder="E-mail").input.ask-form__input
+                input(type="tel" name="phone" placeholder="Телефон").input.ask-form__input
+        .ask-form__bottom
+            button(type="submit").button.ask-form__button Задать вопрос
+            p.ask-form__privacy Мы не передаем телефон 3-м лицам и не рассылаем спам

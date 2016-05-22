@@ -1,12 +1,8 @@
 include ../blocks/browsehappy/browsehappy
 include ../blocks/header/header
 include ../blocks/breadcrumb/breadcrumb
-include ../blocks/slider/slider
-include ../blocks/features/features
+include ../blocks/card/card
 include ../blocks/text-block/text-block
-include ../blocks/steps/steps
-include ../blocks/docs/docs
-include ../blocks/order/order
 include ../blocks/footer/footer
 include ../blocks/popups/popups
 
@@ -17,7 +13,7 @@ html(lang="ru-RU")
     head
         meta(charset="utf-8")
         
-        title Услуга | Автосделка
+        title Карточка | Автосделка
         meta(name="description" content="")
         meta(name="keywords" content="")
         
@@ -44,18 +40,12 @@ html(lang="ru-RU")
         main.main
             section.content
                 .content__in
-                    +breadcrumb("Автоломбард")
-                    h1.page-title Автоломбард
-                    p Возможность получить кредит под залог автомобиля обладает массой достоинств. Во-первых, оперативность выдачи денег – всего через 30 минут вы получите 90% от стоимости вашего автомобиля наличными в кассе автоломбарда. 
-            +slider-reverse()
-            +features()
-            +text-block-3()
-            +steps()
-            +docs()
-            +text-block-4()
-            +text-block-extra()
-            +order()
-            +text-block-5()
+                    +breadcrumb-2("Автосалон", "Mazda 6")
+                    h1.page-title Merсedes-Benz M-Class, 2008 год
+                    
+                    p Ford Galaxy II Рестайлинг – минивэн M-класса, передний привод. Механика и робот. Дизельные и бензиновые двигатели мощностью от 115 до 203 лошадиных сил. Lorem ipsum dolor sit amet, pro suscipit mediocritatem eu, in facete deseruisse per, in oratio assentior qui. Ius eu assentior liberavisse, mea ea nonumy quaestio, usu errem timeam consequat ne. Pro minim molestiae ut. Dolor libris sanctus usu ne. Vim id soluta eruditi singulis, elit eius rebum no ius.
+
+            +text-block-5(class="text-block--left")
         +footer(id="footer")
         +mmenu()
         .hidden

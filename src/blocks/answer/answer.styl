@@ -1,0 +1,50 @@
+.answer
+    display block
+    width auto
+    background-color #e1e5ea
+    padding 25px 25px 5px
+    margin 0 0 30px 100px
+    cf()
+    +below(768px)
+        margin-left 50px
+    +below(480px)
+        margin-left 0
+
+    &__photo
+        display block
+        width 70px
+        height 70px
+        border-radius 50%
+        margin 0 15px 3px 0
+        float left
+
+    &__name
+        color #2a2a2a
+        font(Bold)
+        font-size 20px
+        line-height 1
+        margin 12px 0 12px
+        +below(1000px)
+            font-size 18px
+            margin-top 15px
+        +below(480px)
+            margin-top 5px
+
+    &__date
+        display block
+        color #555
+        font()
+        font-size 15px
+        line-height 1
+        margin 0 0 20px
+        +below(1000px)
+            font-size 13px
+
+    &__text
+        color #2a2a2a
+        font()
+        font-size 20px
+        line-height 1.5
+        margin 0 0 20px
+        +below(1000px)
+            font-size 18px
