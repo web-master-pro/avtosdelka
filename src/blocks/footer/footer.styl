@@ -2,19 +2,16 @@
     background-color #f4f6f8
 
     &__in
-        container(1210px)
+        container(1000px)
         padding 40px 20px 45px
         display flex
-        +below(1170px)
-            justify-content space-between
+        justify-content space-between
         +below(700px)
             justify-content center
             flex-flow row wrap
 
     &__left
-        flex 1 1 420px
-        +below(1170px)
-            flex 1 1 400px
+        flex 1 1 400px
         +below(940px)
             flex 1 1 50%
         +below(700px)
@@ -29,7 +26,7 @@
         width 100%
         color #666
         font()
-        font-size 18px
+        font-size 14px
         font-weight 400
         line-height 1.44
         margin 0
@@ -39,25 +36,19 @@
             &:hover
                 color #d90025
                 text-decoration underline
-        +below(1170px)
-            font-size 14px
 
     &__mid
-        flex 0 1 370px
+        flex 0 1 290px
         display flex
         flex-flow row nowrap
         justify-content space-between
-        +below(1170px)
-            flex 0 1 290px
         +below(940px)
             display none
 
     &__right
-        flex 0 1 300px
+        flex 0 1 240px
         text-align right
         padding-top 22px
-        +below(1170px)
-            flex 0 1 240px
         +below(940px)
             flex 1 1 50%
         +below(700px)
@@ -68,7 +59,7 @@
         display block
         color #606060
         font()
-        font-size 34px
+        font-size 27px
         line-height 1
         text-decoration none
         text-align right
@@ -78,8 +69,6 @@
             font(Bold)
         &:hover
             text-decoration none
-        +below(1170px)
-            font-size 27px
         +below(940px)
             font-size 34px
         +below(700px)

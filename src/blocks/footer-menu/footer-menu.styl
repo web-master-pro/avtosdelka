@@ -1,11 +1,9 @@
 .footer-menu
-    width 170px
+    width 130px
     padding 0
     margin 0
     display block
     list-style none
-    +below(1170px)
-        width 130px
 
     &__item
         display block
@@ -15,13 +13,10 @@
     &__link
         color #666
         font()
-        font-size 16px
+        font-size 13px
         line-height 1
         text-decoration underline
         transition all .5s ease
-
-        +below(1170px)
-            font-size 13px
 
         ^[0]__item.current &
         &.current

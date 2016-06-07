@@ -1,6 +1,6 @@
 .main-menu
     width 100%
-    max-width 1240px
+    max-width 960px
     list-style none
     padding 0
     margin 0 auto
@@ -21,9 +21,6 @@
                 order 1
             &:nth-child(5)
                 display none
-        +below(480px)
-            // flex 1 1 100%
-
 
     &__link
         display flex
@@ -31,25 +28,19 @@
         justify-content center
         align-items center
         color #666
-        height 57px
+        height 46px
         color #fff
         font(Demi)
-        font-size 25px
+        font-size 19px
         line-height 1
         text-transform uppercase
-        padding 3px 30px 0
+        padding 2px 25px 0
         text-decoration none
         transition all .5s ease
         span^[0]__caption
-            padding-bottom 2px
+            padding-bottom 1px
             border-bottom 1px dotted #fff
 
-        +below(1240px)
-            height 46px
-            font-size 19px
-            padding 2px 25px 0
-            span^[0]__caption
-                padding-bottom 1px
         +below(480px)
             font-size 15px
             padding 2px 2px 0

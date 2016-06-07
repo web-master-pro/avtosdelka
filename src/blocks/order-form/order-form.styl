@@ -1,12 +1,9 @@
 .order-form
     background-color rgba(0,0,0,.7)
-    padding 25px
+    padding 20px
     height auto
     width 100%
-    max-width 420px
-    +below(1170px)
-        max-width 360px
-        padding 20px
+    max-width 360px
     +below(940px)
         max-width 100%
         padding 40px
@@ -15,9 +12,8 @@
 
     &__input
         margin-bottom 20px
-        +below(1170px)
-            height 42px
-            line-height 42px
+        height 42px
+        line-height 42px
         +below(940px)
             display block
             height 50px
@@ -33,13 +29,10 @@
             flex-direction column
 
     &__button
-        max-width 190px
-        height 50px
+        max-width 150px
+        height 40px
         flex 0 0 auto
-        +below(1170px)
-            max-width 150px
-            height 40px
-            font-size 16px
+        font-size 16px
         +below(940px)
             max-width 190px
             height 50px
@@ -49,11 +42,9 @@
     &__privacy
         color #bebebe
         font()
-        font-size 14px
+        font-size 11px
         line-height 1.5
         margin 0 0 0 10px
-        +below(1170px)
-            font-size 11px
         +below(940px)
             font-size 14px
             margin 0

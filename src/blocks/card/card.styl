@@ -1,6 +1,6 @@
 .card
     width 100%
-    max-width 1210px
+    max-width 1000px
     margin -10px auto 0
     padding 0 20px 5px
     display flex
@@ -21,16 +21,11 @@
             margin-right 0
 
     &__slideshow
-        flex 0 0 670px
-        max-width 670px
-        // background-color #eee
-        +below(1210px)
-            flex 0 0 540px
-            max-width 540px
+        flex 0 0 540px
+        max-width 540px
         +below(940px)
             flex 1 1 100%
             max-width 100%
-            // min-height 500px
 
     &__price
         display block
@@ -93,9 +88,6 @@
             border-color #d90025
 
 .fotorama
-
-    // &__nav
-    //     white-space wrap
 
     &__nav-wrap
         +below(940px)
